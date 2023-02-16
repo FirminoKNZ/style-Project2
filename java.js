@@ -1,27 +1,32 @@
-
 function addchapeus(){
 
     let body = document.querySelector('body');
 
     h2 = document.createElement('h2');
     body.appendChild(h2);
+    h2.setAttribute('class', 'h2sec');
     h2.innerHTML = 'Chapéus'
 
+    let p = document.createElement('p');
+    body.appendChild(p)
+    p.setAttribute('class', 'pchapeus');
+    p.innerHTML = 'Nossa incrivel coleção de chapéus Cambará';
+
     let sectionc = document.createElement('section');
-    sectionc.setAttribute('class', 'sectionc');
+    sectionc.setAttribute('class', 'section');
     body.appendChild(sectionc);
     sectionc.id = 'Chapéus';
 
-    let divcatc = document.createElement('div');
-    sectionc.appendChild(divcatc);
-    divcatc.setAttribute('class', 'catC');
+    let divsec = document.createElement('div');
+    sectionc.appendChild(divsec);
+    divsec.setAttribute('class', 'divsec');
 
     for(let i = 0; i < stock.length; i++){
         if(stock[i].tag === 'Chapéus'){
 
             let produto = document.createElement('div');
             produto.setAttribute('class', 'product');
-            sectionc.appendChild(produto);
+            divsec.appendChild(produto);
             
             let figcard = document.createElement('figure');
             produto.appendChild(figcard);
@@ -78,30 +83,32 @@ function addbolsas(){
 
     let body = document.querySelector('body');
 
+    let h2catc = document.createElement('h2');
+    h2catc.setAttribute('class', 'h2sec');
+    body.appendChild(h2catc);
+    h2catc.innerHTML = 'Bolsas';
+
+    let p = document.createElement('p');
+    body.appendChild(p)
+    p.setAttribute('class', 'pchapeus');
+    p.innerHTML = 'Nossa coleção de bolsas Cambará';
+
     let sectionc = document.createElement('section');
-    sectionc.setAttribute('class', 'sectionb');
+    sectionc.setAttribute('class', 'section');
     body.appendChild(sectionc);
     sectionc.id = 'Bolsas';
 
-    let h2catc = document.createElement('h2');
-    h2catc.setAttribute('class', 'h2b');
-    sectionc.appendChild(h2catc);
-    h2catc.innerHTML = 'Bolsas >';
+    let divsec = document.createElement('div');
+    sectionc.appendChild(divsec);
+    divsec.setAttribute('class', 'divsec');
 
-    let divcatc = document.createElement('div');
-    h2catc.appendChild(divcatc);
-    divcatc.setAttribute('class', 'catBs');
-
-    let divp = document.createElement('div');
-    divp.setAttribute('class', 'cardsb');
-    sectionc.appendChild(divp); 
 
     for(let i = 0; i < stock.length; i++){
         if(stock[i].tag === 'Bolsas'){
 
             let produto = document.createElement('div');
             produto.setAttribute('class', 'product');
-            divp.appendChild(produto);
+            divsec.appendChild(produto);
             
             let figcard = document.createElement('figure');
             produto.appendChild(figcard);
@@ -159,30 +166,31 @@ function addbotas(){
 
     let body = document.querySelector('body');
 
+    let h2catc = document.createElement('h2');
+    h2catc.setAttribute('class', 'h2sec');
+    body.appendChild(h2catc);
+    h2catc.innerHTML = 'Calçados';
+
+    let p = document.createElement('p');
+    body.appendChild(p)
+    p.setAttribute('class', 'pchapeus');
+    p.innerHTML = 'Nossa coleção de Calçados Cambará';
+
     let sectionc = document.createElement('section');
-    sectionc.setAttribute('class', 'sectionbt');
+    sectionc.setAttribute('class', 'section');
     body.appendChild(sectionc);
     sectionc.id = 'Botas';
 
-    let divp = document.createElement('div');
-    divp.setAttribute('class', 'cardsbt');
-    sectionc.appendChild(divp); 
-
-    let h2catc = document.createElement('h2');
-    h2catc.setAttribute('class', 'h2bt');
-    sectionc.appendChild(h2catc);
-    h2catc.innerHTML = 'Botas >';
-
-    let divcatc = document.createElement('div');
-    h2catc.appendChild(divcatc);
-    divcatc.setAttribute('class', 'catB');
+    let divsec = document.createElement('div');
+    sectionc.appendChild(divsec);
+    divsec.setAttribute('class', 'divsec'); 
 
     for(let i = 0; i < stock.length; i++){
         if(stock[i].tag === 'Botas'){
 
             let produto = document.createElement('div');
             produto.setAttribute('class', 'product');
-            divp.appendChild(produto);
+            divsec.appendChild(produto);
             
             let figcard = document.createElement('figure');
             produto.appendChild(figcard);
@@ -240,30 +248,31 @@ function addacess(){
 
     let body = document.querySelector('body');
 
+    let h2catc = document.createElement('h2');
+    h2catc.setAttribute('class', 'h2sec');
+    body.appendChild(h2catc);
+    h2catc.innerHTML = 'Bainhas';
+
+    let p = document.createElement('p');
+    body.appendChild(p)
+    p.setAttribute('class', 'pchapeus');
+    p.innerHTML = 'Nossa incrivel coleção de bainhas sobre medidas';
+
     let sectionc = document.createElement('section');
-    sectionc.setAttribute('class', 'sectiona');
+    sectionc.setAttribute('class', 'section');
     body.appendChild(sectionc);
     sectionc.id = 'Acessórios';
 
-    let h2catc = document.createElement('h2');
-    h2catc.setAttribute('class', 'h2a');
-    sectionc.appendChild(h2catc);
-    h2catc.innerHTML = 'Acessórios >';
-
-    let divcatc = document.createElement('div');
-    h2catc.appendChild(divcatc);
-    divcatc.setAttribute('class', 'catA');
-
-    let divp = document.createElement('div');
-    divp.setAttribute('class', 'cardsa');
-    sectionc.appendChild(divp); 
+    let divsec = document.createElement('div');
+    sectionc.appendChild(divsec);
+    divsec.setAttribute('class', 'divsec');
 
     for(let i = 0; i < stock.length; i++){
         if(stock[i].tag === 'Acessórios'){
 
             let produto = document.createElement('div');
             produto.setAttribute('class', 'product');
-            divp.appendChild(produto);
+            divsec.appendChild(produto);
             
             let figcard = document.createElement('figure');
             produto.appendChild(figcard);
@@ -323,30 +332,31 @@ function addpets(){
 
     let body = document.querySelector('body');
 
-    let sectionc = document.createElement('section');
-    sectionc.setAttribute('class', 'sectiona');
-    body.appendChild(sectionc);
-    sectionc.id = 'Pets';
-
     let h2catc = document.createElement('h2');
-    h2catc.setAttribute('class', 'h2a');
-    sectionc.appendChild(h2catc);
-    h2catc.innerHTML = 'Pets >';
+    h2catc.setAttribute('class', 'h2sec');
+    body.appendChild(h2catc);
+    h2catc.innerHTML = 'Pet Shop';
 
-    let divcatc = document.createElement('div');
-    h2catc.appendChild(divcatc);
-    divcatc.setAttribute('class', 'catP');
+    let p = document.createElement('p');
+    body.appendChild(p)
+    p.setAttribute('class', 'pchapeus');
+    p.innerHTML = 'Nossa incrivel coleção para seus bichinhos';
 
-    let divp = document.createElement('div');
-    divp.setAttribute('class', 'cardsa');
-    sectionc.appendChild(divp); 
+    let sectionc = document.createElement('section');
+    sectionc.setAttribute('class', 'section');
+    body.appendChild(sectionc);
+    sectionc.id = 'Pets';  
+
+    let divsec = document.createElement('div');
+    sectionc.appendChild(divsec);
+    divsec.setAttribute('class', 'divsec'); 
 
     for(let i = 0; i < stock.length; i++){
         if(stock[i].tag === 'Pets'){
 
             let produto = document.createElement('div');
             produto.setAttribute('class', 'product');
-            divp.appendChild(produto);
+            divsec.appendChild(produto);
             
             let figcard = document.createElement('figure');
             produto.appendChild(figcard);
@@ -405,30 +415,35 @@ function addselas(){
 
     let body = document.querySelector('body');
 
-    let sectionc = document.createElement('section');
-    sectionc.setAttribute('class', 'sectiona');
-    body.appendChild(sectionc);
-    sectionc.id = 'Selas';
-
     let h2catc = document.createElement('h2');
-    h2catc.setAttribute('class', 'h2a');
-    sectionc.appendChild(h2catc);
-    h2catc.innerHTML = 'Selas >';
+    h2catc.setAttribute('class', 'h2sec');
+    body.appendChild(h2catc);
+    h2catc.innerHTML = 'Selas';
+
+    let p = document.createElement('p');
+    body.appendChild(p)
+    p.setAttribute('class', 'pchapeus');
+    p.innerHTML = 'Nossa incrivel coleção para montarias';
+
+    let sectionc = document.createElement('section');
+    sectionc.setAttribute('class', 'section');
+    body.appendChild(sectionc);
+    sectionc.id = 'Selas'; 
 
     let divcatc = document.createElement('div');
     h2catc.appendChild(divcatc);
     divcatc.setAttribute('class', 'catS');
 
-    let divp = document.createElement('div');
-    divp.setAttribute('class', 'cardsa');
-    sectionc.appendChild(divp); 
+    let divsec = document.createElement('div');
+    sectionc.appendChild(divsec);
+    divsec.setAttribute('class', 'divsec'); 
 
     for(let i = 0; i < stock.length; i++){
         if(stock[i].tag === 'Selas'){
 
             let produto = document.createElement('div');
             produto.setAttribute('class', 'product');
-            divp.appendChild(produto);
+            divsec.appendChild(produto);
             
             let figcard = document.createElement('figure');
             produto.appendChild(figcard);
@@ -486,30 +501,31 @@ function addoutros(){
 
     let body = document.querySelector('body');
 
+    let h2catc = document.createElement('h3');
+    h2catc.setAttribute('class', 'h2sec');
+    body.appendChild(h2catc);
+    h2catc.innerHTML = 'Outros';
+
+    let p = document.createElement('p');
+    body.appendChild(p)
+    p.setAttribute('class', 'pchapeus');
+    p.innerHTML = 'Dentre outros itens que a Cambara pode lhe oferece';
+
     let sectionc = document.createElement('section');
-    sectionc.setAttribute('class', 'sectiona');
+    sectionc.setAttribute('class', 'section');
     body.appendChild(sectionc);
     sectionc.id = 'Outros';
 
-    let h2catc = document.createElement('h3');
-    h2catc.setAttribute('class', 'h2a');
-    sectionc.appendChild(h2catc);
-    h2catc.innerHTML = 'Outros >';
-
-    let divcatc = document.createElement('div');
-    h2catc.appendChild(divcatc);
-    divcatc.setAttribute('class', 'catO');
-
-    let divp = document.createElement('div');
-    divp.setAttribute('class', 'cardsa');
-    sectionc.appendChild(divp); 
+    let divsec = document.createElement('div');
+    sectionc.appendChild(divsec);
+    divsec.setAttribute('class', 'divsec');
 
     for(let i = 0; i < stock.length; i++){
         if(stock[i].tag === 'Outros'){
 
             let produto = document.createElement('div');
             produto.setAttribute('class', 'product');
-            divp.appendChild(produto);
+            divsec.appendChild(produto);
             
             let figcard = document.createElement('figure');
             produto.appendChild(figcard);
